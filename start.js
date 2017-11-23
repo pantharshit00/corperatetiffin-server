@@ -18,5 +18,7 @@ mongoose.connection.on('connected', () => {
 });
 
 require('./models/FoodItems');
+require('./models/User');
+require('./models/Orders');
 
 require('./app');
