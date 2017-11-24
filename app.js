@@ -11,10 +11,12 @@ const { makeExecutableSchema } = require('graphql-tools');
 const { graphiqlExpress, graphqlExpress } = require('apollo-server-express');
 const { refreshTokens } = require('./auth');
 const jwt = require('jsonwebtoken');
+const cors = require('cors');
 
 const app = express();
 
 app.use(morgan('common'));
+app.use(cors('*')); // * is temporary
 
 const typeDefs = mergeTypes(fileLoader(path.join(__dirname, './schemas')));
 
