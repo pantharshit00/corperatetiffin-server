@@ -7,4 +7,6 @@ const FoodItemsSchema = new mongoose.Schema({
   image: [String],
 });
 
+FoodItemsSchema.index({ name: 'text' });
+
 mongoose.model('FoodItem', FoodItemsSchema);

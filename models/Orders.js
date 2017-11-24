@@ -14,6 +14,11 @@ const OrdersSchema = new mongoose.Schema({
       quantity: Number,
     },
   ],
+  amount: Number,
+  order_date: {
+    type: Date,
+    default: Date.now(),
+  },
 });
 
 mongoose.model('Order', OrdersSchema);

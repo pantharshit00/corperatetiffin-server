@@ -21,8 +21,16 @@ type RegisterResponse {
   errors: Error
 }
 
+type LoginResponse {
+  ok: Boolean!
+  token: String
+  refreshToken: String
+  errors: [Error!]
+}
+
 type Mutation {
   createUser(email: String!, name: String!, password: String!, phn: Float!, address: String!): RegisterResponse!
+  loginUser(email:String!, password:String!): LoginResponse!
 }
 
 `;

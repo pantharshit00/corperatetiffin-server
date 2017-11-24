@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
 
 const User = mongoose.model('User');
+const { tryLogin } = require('../auth');
 
 module.exports = {
   Query: {
@@ -30,6 +31,26 @@ module.exports = {
           ok: false,
           errors: e,
         };
+      }
+    },
+    loginUser: async (parent, { email, password }) => {
+      try {
+        const {
+          ok, token, refreshToken, errors,
+        } = await tryLogin(
+          email,
+          password,
+          process.env.SECRET,
+          process.env.SECRET2,
+        );
+        return {
+          ok,
+          token,
+          refreshToken,
+          errors,
+        };
+      } catch (e) {
+        throw e;
       }
     },
   },
