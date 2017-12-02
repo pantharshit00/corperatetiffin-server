@@ -1,0 +1,52 @@
+[
+  {
+    "name": "Aloo ke parothe",
+    "price": 40,
+    "image": ["/static/img/aloo.jpg"]
+  },
+  {
+    "name": "Naan",
+    "price": 100,
+    "image": ["/static/img/naan.jpg"]
+  },
+  {
+    "name": "Special Lunch",
+    "price": 250,
+    "image": ["/static/img/special.jpg"]
+  },
+  {
+    "name": "Tandoori Roti",
+    "price": 15,
+    "image": ["/static/img/tandoori.jpg"]
+  },
+  {
+    "name": "Paneer special",
+    "price": 160,
+    "image": ["/static/img/paneer.jpg"]
+  },
+  {
+    "name": "Paneer Blaze Lunch",
+    "price": 300,
+    "image": ["/static/img/paneer-blaze.jpg"]
+  },
+  {
+    "name": "Special Soup",
+    "price": 40,
+    "image": ["/static/img/soup.jpg"]
+  },
+  {
+    "name": "Gobi special lunch",
+    "price": 160,
+    "image": ["/static/img/gobi.jpg"]
+  },
+  {
+    "name": "Bhindi Special Lunch",
+    "price": 150,
+    "image": ["/static/img/bhindi.jpg"]
+  },
+  {
+    "name": "halwa",
+    "price": 60,
+    "image": ["/static/img/halwa.jpg"]
+  }
+]

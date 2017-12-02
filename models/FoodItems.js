@@ -3,10 +3,13 @@ const mongoose = require('mongoose');
 const FoodItemsSchema = new mongoose.Schema({
   name: String,
   price: Number,
-  subitems: [{ name: String, image: String }],
   image: [String],
+  created_at: {
+    type: Date,
+    default: Date.now(),
+  },
 });
 
 FoodItemsSchema.index({ name: 'text' });
 
-mongoose.model('FoodItem', FoodItemsSchema);
+module.exports = mongoose.model('FoodItem', FoodItemsSchema);

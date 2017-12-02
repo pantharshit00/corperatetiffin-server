@@ -8,7 +8,9 @@
   "private": true,
   "scripts": {
     "precommit": "lint-staged",
-    "dev": "nodemon start.js"
+    "dev": "nodemon start.js",
+    "loadSample": "node ./loadSample",
+    "blowitallaway": "node ./loadSample --delete"
   },
   "dependencies": {
     "apollo-server-express": "^1.2.0",
@@ -35,10 +37,6 @@
     "prettier": "^1.8.2"
   },
   "lint-staged": {
-    "*.js": [
-      "prettier --write --single-quote --semi",
-      "eslint --fix",
-      "git add"
-    ]
+    "*.js": ["prettier --write --single-quote --semi", "eslint --fix", "git add"]
   }
 }

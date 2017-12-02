@@ -23,5 +23,12 @@ module.exports = {
       });
       return searchedData;
     },
+    getFoodItemById: async (parent, { id }) => {
+      const foodItem = await Food.findOne({
+        _id: id,
+      });
+      console.log(foodItem);
+      return foodItem;
+    },
   },
 };
