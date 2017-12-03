@@ -7,6 +7,7 @@ module.exports = `
   type Food{
     name: String!,
     image: [String]!,
-    price: Int!
+    price: Int!,
+    description: String,
   }
 `;

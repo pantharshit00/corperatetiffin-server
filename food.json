@@ -2,51 +2,61 @@
   {
     "name": "Aloo ke parothe",
     "price": 40,
-    "image": ["/static/img/aloo.jpg"]
+    "image": ["/static/img/aloo.jpg"],
+    "description": "1. Very tasty parathas \n 2. Come with extra butter"
   },
   {
     "name": "Naan",
     "price": 100,
-    "image": ["/static/img/naan.jpg"]
+    "image": ["/static/img/naan.jpg"],
+    "description": "1. Very tasty parathas \n 2. Come with extra butter"
   },
   {
     "name": "Special Lunch",
     "price": 250,
-    "image": ["/static/img/special.jpg"]
+    "image": ["/static/img/special.jpg"],
+    "description": "1. Very tasty parathas \n 2. Come with extra butter"
   },
   {
     "name": "Tandoori Roti",
     "price": 15,
-    "image": ["/static/img/tandoori.jpg"]
+    "image": ["/static/img/tandoori.jpg"],
+    "description": "1. Very tasty parathas \n 2. Come with extra butter"
   },
   {
     "name": "Paneer special",
     "price": 160,
-    "image": ["/static/img/paneer.jpg"]
+    "image": ["/static/img/paneer.jpg"],
+    "description": "1. Very tasty parathas \n 2. Come with extra butter"
   },
   {
     "name": "Paneer Blaze Lunch",
     "price": 300,
-    "image": ["/static/img/paneer-blaze.jpg"]
+    "image": ["/static/img/paneer-blaze.jpg"],
+    "description": "1. Very tasty parathas \n 2. Come with extra butter"
   },
   {
     "name": "Special Soup",
     "price": 40,
-    "image": ["/static/img/soup.jpg"]
+    "image": ["/static/img/soup.jpg"],
+    "description": "1. Very tasty parathas \n 2. Come with extra butter"
   },
   {
     "name": "Gobi special lunch",
     "price": 160,
-    "image": ["/static/img/gobi.jpg"]
+    "image": ["/static/img/gobi.jpg"],
+    "description": "1. Very tasty parathas \n 2. Come with extra butter"
   },
   {
     "name": "Bhindi Special Lunch",
     "price": 150,
-    "image": ["/static/img/bhindi.jpg"]
+    "image": ["/static/img/bhindi.jpg"],
+    "description": "1. Very tasty parathas \n 2. Come with extra butter"
   },
   {
     "name": "halwa",
     "price": 60,
-    "image": ["/static/img/halwa.jpg"]
+    "image": ["/static/img/halwa.jpg"],
+    "description": "1. Very tasty parathas \n 2. Come with extra butter"
   }
 ]

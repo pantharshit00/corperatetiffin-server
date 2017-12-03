@@ -53,6 +53,8 @@ const addUser = async (req, res, next) => {
 };
 app.use(addUser);
 
+app.use('/static', express.static(path.join(__dirname, 'static')));
+
 app.use(
   '/graphql',
   bodyParser.json(),

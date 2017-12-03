@@ -1,8 +1,13 @@
 const mongoose = require('mongoose');
+const Remarkable = require('remarkable');
 
 const Food = mongoose.model('FoodItem');
+const md = new Remarkable();
 
 module.exports = {
+  Food: {
+    description: ({ description }) => md.render(description),
+  },
   Query: {
     foodItems: async () => {
       const items = await Food.find();
