@@ -1,9 +1,11 @@
 [
   {
+    "_id": "5a229e2057911c2f8411af7c",
     "name": "Aloo ke parothe",
     "price": 40,
     "image": ["/static/img/aloo.jpg"],
-    "description": "1. Very tasty parathas \n 2. Come with extra butter"
+    "description":
+      "1. Very tasty parathas \n 2. Come with extra butter \n 3. Quite Affordable \n 4. Satisfy your hunger easliy \n 5. Comes with dal makhani included !"
   },
   {
     "name": "Naan",

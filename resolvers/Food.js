@@ -32,7 +32,6 @@ module.exports = {
       const foodItem = await Food.findOne({
         _id: id,
       });
-      console.log(foodItem);
       return foodItem;
     },
   },
