@@ -34,5 +34,15 @@ module.exports = {
       });
       return foodItem;
     },
+    getHotFoodItems: async () => {
+      const foodItems = await Food.aggregate([
+        {
+          $sort: {
+            created_at: -1,
+          },
+        },
+      ]).limit(12);
+      return foodItems;
+    },
   },
 };
