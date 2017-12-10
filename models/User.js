@@ -3,10 +3,16 @@ const argon2 = require('argon2');
 
 const UserSchema = new mongoose.Schema({
   name: String,
-  email: String,
+  email: {
+    type: String,
+    index: { unique: true, dropDups: true },
+  },
   phn: Number,
   password: String,
-  address: String,
+  address: {
+    type: [String],
+    default: [],
+  },
 });
 
 UserSchema.pre('save', async function createHash(next) {

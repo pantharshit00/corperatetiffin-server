@@ -29,7 +29,7 @@ type LoginResponse {
 }
 
 type Mutation {
-  createUser(email: String!, name: String!, password: String!, phn: Float!, address: String!): RegisterResponse!
+  createUser(email: String!, name: String!, password: String!, phn: Float!): RegisterResponse!
   loginUser(email:String!, password:String!): LoginResponse!
 }
 
