@@ -9,9 +9,20 @@ module.exports = {
     description: ({ description }) => md.render(description),
   },
   Query: {
-    foodItems: async () => {
-      const items = await Food.find();
-      return items;
+    foodItems: async (parent, { page = 1 }) => {
+      const limit = 5;
+      // prettier-ignore
+      const skip = (limit * page) - limit;
+
+      const itemsPromise = Food.find()
+        .skip(skip)
+        .limit(limit)
+        .sort({ created_at: 'desc' });
+
+      const noPromise = Food.count();
+
+      const [items, totalPages] = await Promise.all([itemsPromise, noPromise]);
+      return { items, totalPages: Math.ceil(totalPages / limit) };
     },
     getFoodItems: async (parent, { name }) => {
       const searchedData = await Food.find(

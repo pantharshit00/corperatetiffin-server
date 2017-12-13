@@ -7,6 +7,7 @@ const FoodItemsSchema = new mongoose.Schema({
   created_at: {
     type: Date,
     default: Date.now(),
+    index: { type: 'regular' },
   },
   description: String,
 });

@@ -1,6 +1,6 @@
 module.exports = `
   type Query{
-    foodItems: [Food],
+    foodItems(page:Int): foodItemResponse,
     getFoodItems(name:String!): [Food],
     getFoodItemById(id:String!): Food,
     getHotFoodItems: [Food]
@@ -11,5 +11,9 @@ module.exports = `
     image: [String]!,
     price: Int!,
     description: String,
+  }
+  type foodItemResponse {
+    items:[Food],
+    totalPages: Int!
   }
 `;
